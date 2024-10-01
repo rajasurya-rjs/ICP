@@ -195,7 +195,7 @@ int main(){
    }
 
 
-*/
+
 
 // add the first element of the first array at the end of the list
 
@@ -223,3 +223,95 @@ int main(){
   }
 
    }
+
+
+
+
+
+void bring(vector <int> &n){
+    if(is_sorted(n.begin(),n.begin()+)){
+        cout<<"true";
+    }
+    
+    else{
+    int temp = n[n.size()-1];
+    
+    for(int i = n.size()-1;i>=0;i--){
+        if(n[i-1]>=temp){
+            n[i]= n[i-1];
+            n[i-1]=temp;
+
+        }
+
+    }
+
+    for(int i =0;i<n.size();i++){
+        
+       cout<<n[i]<<" ";
+
+    }
+    
+    }
+}
+int main(){
+    int n;
+    cin>>n;
+    vector<int> g(n);
+    int m;
+    for(int i = 0;i<n;i++){
+        cin>>m;
+        g[i]=m;
+    }
+    bring(g);
+}
+
+
+
+
+
+
+
+
+
+
+void bring(vector <int> &n,int c){
+    if(is_sorted(n.begin(),n.begin()+c+1)){
+        cout<<"true";
+    }
+    
+    else{
+    int temp = n[c+1];
+    
+    for(int i = n[c+1];i>=0;i--){
+        if(n[i-1]>=temp){
+            n[i]= n[i-1];
+            n[i-1]=temp;
+
+        }
+
+    }
+
+    for(int i =0;i<n.size();i++){
+        
+       cout<<n[i]<<" ";
+
+    }
+    
+    }
+}
+int main(){
+    int n;
+    cin>>n;
+    int c;
+    cin>>c;
+    vector<int> g(n);
+    int m;
+    for(int i = 0;i<n;i++){
+        cin>>m;
+        g[i]=m;
+    }
+    bring(g);
+}
+
+
+*/

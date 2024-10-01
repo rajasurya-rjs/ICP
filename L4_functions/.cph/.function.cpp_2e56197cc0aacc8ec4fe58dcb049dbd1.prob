@@ -1,0 +1,1 @@
+{"name":"Local: function","url":"/Users/rajasurya/icp/ICP/L4_functions/function.cpp","tests":[{"id":1727765921709,"input":"6\n5\n1 3 4 5 6 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/rajasurya/icp/ICP/L4_functions/function.cpp","group":"local","local":true}

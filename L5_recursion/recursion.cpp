@@ -70,6 +70,44 @@ int main(){
     printn1(n);
 }
 
+
+// try to solve this problem using backtracking
+// print from 1 to n; 
+
+
+
+void backtraking1(int i , int n){
+    if(i<1){
+        return ;
+    }
+    backtraking1(i-1,n);
+    cout<<i<<" ";
+}
+int main(){
+int n;
+cin>>n;
+backtraking1(n,n);
+}
+
+
 */
 
+
+
+// try to solve this problem using backtracking
+// print from n to 1;
+
+
+void printre(int i , int n){
+    
+}
+
+int main (){
+    int n;
+    cin>>n;
+    printre(n,n);
+}
+
+
+//Print GFG n times without the loop.
 
